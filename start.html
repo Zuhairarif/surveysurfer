@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Surfer</title>
+    <style>
+      .heading {
+        text-align: centre;
+        font-size: 30px;
+        font-weight: 200;
+        width: 300px;
+        background-color: red;
+        display: inline-block;
+      }
+      .image {
+        width: 125px;
+
+        height: 100px;
+        display: inline-block;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary-color: #4891ff;
+        --light-color: #f4f4f6;
+        --dark-color: #111;
+      }
+      ul {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+      }
+      .navbar {
+        background: #fff;
+        padding: 20px;
+      }
+      .navbar.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar.main-menu ul {
+        display: flex;
+      }
+      .navbar ul li a {
+        padding: 10px 20px;
+        display: block;
+        font-weight: 600;
+        transition: 0.5s;
+      }
+
+      .navbar ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .container-sm {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 13px 20px;
+        background-color: var(--light-color);
+        color: #333;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .btn:hover {
+        opacity: 0.8s;
+      }
+      .btn-primary {
+        background: var(--primary-color);
+        color: #fff;
+      }
+      .btn-dark {
+        background: var(--dark-color);
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="image">
+          <img src="./LOGO.png" alt="Your Logo" />
+        </div>
+        <div class="heading">
+          <h1>Survey Surfer</h1>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="start.html">About Us</a>
+            </li>
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="btn btn-primary" href="#">
+                <i class="btn-primary">Log In</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
