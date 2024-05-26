@@ -18,12 +18,12 @@ export default function Auth() {
         reset();
     }
     if(isLoggedIn)
-    return (
+    return 
 <>
 <h1>Logged In: {pb.authStore.model.email}</h1>
 <p>Verified: {isVerified?.toString()}</p>
 {!isVerified && <button onClick={requestVerification}>Send Verification Email</button>}
-<button> onClick={logout}>Log Out</button>
+<button> onClick={logout}Log Out</button>
 </>
 };
 return (
